@@ -34,12 +34,11 @@ set shiftwidth=4
 set list
 set listchars=tab:\!\ ,trail:.
 
-
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme makonrails
 
 set number
 set autoindent
