@@ -34,7 +34,12 @@ set shiftwidth=4
 set list
 set listchars=tab:\!\ ,trail:.
 
+
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 syntax on
+set background=dark
+colorscheme solarized
 
 set number
 set autoindent
@@ -67,7 +72,6 @@ nnoremap <silent> <F5> :call Retab()<CR>
 if has('gui')
     set go=rm
     set guifont=Terminus\ 12
-    colorscheme makonrails
 endif
 
 if has('gui_running')
