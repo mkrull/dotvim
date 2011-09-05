@@ -3,13 +3,16 @@
 " load pathogen plugins
 call pathogen#infect('vim-pathogen')
 
+let mapleader = ','
+let g:Perl_MapLeader  = ','
+
 set nocompatible
 set nobackup
 set noerrorbells
 set noflash
 set nowrap
 
-function Retab ()
+function! Retab ()
     set expandtab
     %retab
     let _s=@/
@@ -17,6 +20,14 @@ function Retab ()
     let @/=_s
     nohl
 endfunction
+
+function! Help()
+  let helpdoc = input('Call for help on: ')
+  call inputrestore()
+  exe 'vert bo help ' . helpdoc
+endfunction
+
+command! -nargs=0 Help :call Help()
 
 if has('mouse')
     set mouse=a
@@ -62,7 +73,8 @@ set smartcase      " but become case sensitive if you type uppercase characters
 filetype plugin indent on
 
 " toggle paste-mode
-nnoremap <F2> :set invpaste paste?<CR>
+map <F1> :Help <CR>
+nnoremap <F2> :set invpaste paste? <CR>
 imap <F2> <C-O><F2>
 set pastetoggle=<F2>
 
@@ -86,6 +98,7 @@ autocmd BufNewFile,BufEnter *.hs compiler ghc
 
 " syntastic
 let g:syntastic_stl_format = '[%E{Error: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+set statusline=''
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
