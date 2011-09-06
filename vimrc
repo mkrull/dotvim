@@ -22,9 +22,9 @@ function! Retab ()
 endfunction
 
 function! Help()
-  let helpdoc = input('Call for help on: ')
-  call inputrestore()
-  exe 'vert bo help ' . helpdoc
+    let helpdoc = input('Call for help on: ')
+    call inputrestore()
+    exe 'vert bo help ' . helpdoc
 endfunction
 
 command! -nargs=0 Help :call Help()
@@ -87,9 +87,9 @@ if has('gui')
 endif
 
 if has('gui_running')
-  let NERDTreeWinSize=40
-  autocmd VimEnter * NERDTree /home/mak/programming
-  autocmd VimEnter * wincmd p
+    let NERDTreeWinSize=40
+    autocmd VimEnter * NERDTree /home/mak/programming
+    autocmd VimEnter * wincmd p
 endif
 
 " haskell mode
