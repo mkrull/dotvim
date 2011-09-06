@@ -1,48 +1,52 @@
 [submodule "command-t"]
-	path = vim-pathogen/command-t  
-	url = git://github.com/wincent/Command-T.git
+    path = vim-pathogen/command-t
+    url = git://github.com/wincent/Command-T.git
 
 [submodule "haskellmode-vim"]
-	path = vim-pathogen/haskellmode-vim 
-	url = git://github.com/lukerandall/haskellmode-vim.git
+    path = vim-pathogen/haskellmode-vim
+    url = git://github.com/lukerandall/haskellmode-vim.git
 
 [submodule "nerdtree"]
-	path = vim-pathogen/nerdtree 
-	url = git://github.com/scrooloose/nerdtree.git
+    path = vim-pathogen/nerdtree
+    url = git://github.com/scrooloose/nerdtree.git
 
 [submodule "perl-support.vim"]
-	path = vim-pathogen/perl-support.vim 
-	url = git://github.com/vim-scripts/perl-support.vim.git
+    path = vim-pathogen/perl-support.vim
+    url = git://github.com/vim-scripts/perl-support.vim.git
 
 [submodule "perl-vim-mxd"]
-	path = vim-pathogen/perl-vim-mxd 
-	url = git://github.com/rkitover/perl-vim-mxd.git
+    path = vim-pathogen/perl-vim-mxd
+    url = git://github.com/rkitover/perl-vim-mxd.git
 
 [submodule "snipmate.vim"]
-	path = vim-pathogen/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
+    path = vim-pathogen/snipmate.vim
+    url = git://github.com/msanders/snipmate.vim.git
 
 [submodule "supertab"]
-	path = vim-pathogen/supertab 
-	url = git://github.com/ervandew/supertab.git
+    path = vim-pathogen/supertab
+    url = git://github.com/ervandew/supertab.git
 
 [submodule "syntastic"]
-	path = vim-pathogen/syntastic 
-	url = git://github.com/scrooloose/syntastic.git
+    path = vim-pathogen/syntastic
+    url = git://github.com/scrooloose/syntastic.git
 
 [submodule "vim-coffee-script"]
-	path = vim-pathogen/vim-coffee-script 
-	url = git://github.com/kchmck/vim-coffee-script.git
+    path = vim-pathogen/vim-coffee-script
+    url = git://github.com/kchmck/vim-coffee-script.git
 
 [submodule "vim-fugitive"]
-	path = vim-pathogen/vim-fugitive 
-	url = git://github.com/tpope/vim-fugitive.git
+    path = vim-pathogen/vim-fugitive
+    url = git://github.com/tpope/vim-fugitive.git
 
 [submodule "vim-perl"]
-	path = vim-pathogen/vim-perl 
-	url = git://github.com/petdance/vim-perl.git
+    path = vim-pathogen/vim-perl
+    url = git://github.com/petdance/vim-perl.git
 
 [submodule "vim-conque"]
-	path = vim-pathogen/vim-conque
-	url = git://github.com/rson/vim-conque.git
+    path = vim-pathogen/vim-conque
+    url = git://github.com/rson/vim-conque.git
+
+[submodule "closetag.vim"]
+    path = vim-pathogen/closetag.vim
+    url = git://github.com/vim-scripts/closetag.vim.git
 
