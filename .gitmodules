@@ -42,7 +42,7 @@
 	path = vim-pathogen/vim-perl 
 	url = git://github.com/petdance/vim-perl.git
 
-[submodule "Conque-Shell"]
-	path = vim-pathogen/Conque-Shell
+[submodule "vim-conque"]
+	path = vim-pathogen/vim-conque
 	url = git://github.com/rson/vim-conque.git
 
