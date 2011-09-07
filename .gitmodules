@@ -50,3 +50,6 @@
     path = vim-pathogen/closetag.vim
     url = git://github.com/vim-scripts/closetag.vim.git
 
+[submodule "textutil.vim"]
+    path = vim-pathogen/textutil.vim
+    url = git://github.com/vim-scripts/textutil.vim.git
