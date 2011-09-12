@@ -53,3 +53,7 @@
 [submodule "textutil.vim"]
 	path = vim-pathogen/textutil.vim
 	url = git://github.com/vim-scripts/textutil.vim.git
+
+[submodule "bufexplorer.zip"]
+	path = vim-pathogen/bufexplorer.zip
+	url = git://github.com/vim-scripts/bufexplorer.zip.git

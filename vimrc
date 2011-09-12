@@ -4,7 +4,7 @@
 call pathogen#infect('vim-pathogen')
 
 let mapleader = ','
-let g:Perl_MapLeader  = ','
+let g:Perl_MapLeader  = '-'
 
 set nocompatible
 set nobackup
