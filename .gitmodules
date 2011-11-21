@@ -57,3 +57,7 @@
 [submodule "bufexplorer.zip"]
 	path = vim-pathogen/bufexplorer.zip
 	url = git://github.com/vim-scripts/bufexplorer.zip.git
+
+[submodule "mojo.vim"]
+	path = vim-pathogen/mojo.vim
+	url = git://github.com/yko/mojo.vim.git
