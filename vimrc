@@ -110,6 +110,9 @@ let g:syntastic_auto_loc_list=1
 autocmd BufNewFile,BufEnter *.pl set tags=/home/mak/.vim/perltags
 autocmd BufNewFile,BufEnter *.pm set tags=/home/mak/.vim/perltags
 
+" mojo.vim
+let mojo_highlight_data = 1
+
 " buffer dependent syntax highlighting
 autocmd BufNewFile,BufEnter *.tt set ft=tt2html
 autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
