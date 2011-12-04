@@ -116,4 +116,6 @@ let mojo_highlight_data = 1
 " buffer dependent syntax highlighting
 autocmd BufNewFile,BufEnter *.tt set ft=tt2html
 autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
+autocmd BufNewFile,BufEnter *.pl6 set ft=perl6
+autocmd BufNewFile,BufEnter *.pm6 set ft=perl6
 
