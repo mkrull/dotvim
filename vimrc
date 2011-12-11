@@ -82,13 +82,22 @@ nnoremap <silent> <F5> :call Retab()<CR>
 
 if has('gui')
     set go=rm
-    set guifont=Terminus\ 12
+
+    if has('gui_macvim')
+        set guifont=Monaco:h12
+    else
+        set guifont=Terminus\ 12
+    endif
     colorscheme makonrails
 endif
 
 if has('gui_running')
     let NERDTreeWinSize=40
-    autocmd VimEnter * NERDTree /home/mak/programming
+    if has('macunix')
+        autocmd VimEnter * NERDTree /Users/mak/programming
+    else
+        autocmd VimEnter * NERDTree /home/mak/programming
+    endif
     autocmd VimEnter * wincmd p
 endif
 
