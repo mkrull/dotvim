@@ -45,68 +45,67 @@ hi link htmlTagName          xmlTagName
 hi link htmlEndTag           xmlEndTag
 
 hi Normal                    guifg=#E6E1DC  guibg=#111111
-hi Cursor                    guifg=#000000  ctermfg=0 guibg=#FFFFFF ctermbg=15
-hi CursorLine                guibg=#000000  ctermbg=233 cterm=NONE
+hi Cursor                    guifg=#000000  guibg=#FFFFFF                   ctermfg=0       ctermbg=15
+hi CursorLine                               guibg=#000000                                   ctermbg=233     cterm=NONE
 
-hi Comment                   guifg=#a8a8a8  ctermfg=180
-hi Constant                  guifg=#6D9CBE  ctermfg=73
-hi Define                    guifg=#CC7833  ctermfg=173
-hi Error                     guifg=#FFC66D  ctermfg=221 guibg=#990000 ctermbg=88
-hi Function                  guifg=#FFC66D  ctermfg=221 gui=NONE cterm=NONE
-hi Identifier                guifg=#6D9CBE  ctermfg=73 gui=NONE cterm=NONE
-hi Include                   guifg=#CC7833  ctermfg=173 gui=NONE cterm=NONE
-hi PreCondit                 guifg=#CC7833  ctermfg=173 gui=NONE cterm=NONE
-hi Keyword                   guifg=#CC7833  ctermfg=173 cterm=NONE
+hi Comment                   guifg=#a8a8a8                                  ctermfg=180
+hi Constant                  guifg=#6D9CBE                                  ctermfg=73
+hi Define                    guifg=#CC7833                                  ctermfg=173
+hi Error                     guifg=#FFC66D  guibg=#990000                   ctermfg=221     ctermbg=88
+hi Function                  guifg=#FFC66D                  gui=NONE        ctermfg=221                     cterm=NONE
+hi Identifier                guifg=#6D9CBE                  gui=NONE        ctermfg=73                      cterm=NONE
+hi Include                   guifg=#CC7833                  gui=NONE        ctermfg=173                     cterm=NONE
+hi PreCondit                 guifg=#CC7833                  gui=NONE        ctermfg=173                     cterm=NONE
+hi Keyword                   guifg=#CC7833                                  ctermfg=173                     cterm=NONE
 hi LineNr                    guifg=#d8d8d8  guibg=#1a1a1a
-hi VertSplit                 guibg=#d8d8d8  guifg=#000000
+hi VertSplit                 guifg=#000000  guibg=#d8d8d8
 hi StatusLine                guifg=#d8d8d8  guibg=#000000
 hi StatusLineNC              guifg=#d8d8d8  guibg=#000000
-hi Number                    guifg=#A5C261  ctermfg=107
-hi PreProc                   guifg=#E6E1DC  ctermfg=103
-hi Search                    guifg=NONE     ctermfg=NONE guibg=#2b2b2b ctermbg=235 gui=italic cterm=underline
-hi Statement                 guifg=#CC7833  ctermfg=173 gui=NONE cterm=NONE
-hi String                    guifg=#A5C261  ctermfg=107
-hi Title                     guifg=#FFFFFF  ctermfg=15
-hi Type                      guifg=#DA4939  ctermfg=167 gui=NONE cterm=NONE
-hi Visual                    guibg=#5A647E  ctermbg=60
-hi Pmenu                     guibg=#a8a8a8  guifg=#000000
-hi PmenuSel                  guibg=#cc7833  guifg=#000000
+hi Number                    guifg=#A5C261                                  ctermfg=107
+hi PreProc                   guifg=#E6E1DC                                  ctermfg=103
+hi Search                    guifg=NONE     guibg=#2b2b2b   gui=italic      ctermfg=NONE    ctermbg=235     cterm=underline
+hi Statement                 guifg=#CC7833                  gui=NONE        ctermfg=173                     cterm=NONE
+hi String                    guifg=#A5C261                                  ctermfg=107
+hi Title                     guifg=#FFFFFF                                  ctermfg=15
+hi Type                      guifg=#DA4939                  gui=NONE        ctermfg=167                     cterm=NONE
+hi Visual                                   guibg=#5A647E                                   ctermbg=60
+hi Pmenu                     guifg=#000000  guibg=#a8a8a8
+hi PmenuSel                  guifg=#000000  guibg=#cc7833
 
-hi DiffAdd                   guifg=#E6E1DC  ctermfg=7 guibg=#519F50 ctermbg=71
-hi DiffDelete                guifg=#E6E1DC  ctermfg=7 guibg=#660000 ctermbg=52
-hi Special                   guifg=#DA4939  ctermfg=167
+hi DiffAdd                   guifg=#E6E1DC  guibg=#519F50                   ctermfg=7       ctermbg=71
+hi DiffDelete                guifg=#E6E1DC  guibg=#660000                   ctermfg=7       ctermbg=52
+hi Special                   guifg=#DA4939                                  ctermfg=167
 
-hi pythonBuiltin             guifg=#6D9CBE  ctermfg=73 gui=NONE cterm=NONE
-hi rubyBlockParameter        guifg=#FFFFFF  ctermfg=15
-hi rubyClass                 guifg=#FFFFFF  ctermfg=15
-hi rubyConstant              guifg=#DA4939  ctermfg=167
-hi rubyInstanceVariable      guifg=#D0D0FF  ctermfg=189
-hi rubyInterpolation         guifg=#519F50  ctermfg=107
-hi rubyLocalVariableOrMethod guifg=#D0D0FF  ctermfg=189
-hi rubyPredefinedConstant    guifg=#DA4939  ctermfg=167
-hi rubyPseudoVariable        guifg=#FFC66D  ctermfg=221
-hi rubyStringDelimiter       guifg=#A5C261  ctermfg=143
+hi pythonBuiltin             guifg=#6D9CBE                  gui=NONE        ctermfg=73                      cterm=NONE
+hi rubyBlockParameter        guifg=#FFFFFF                                  ctermfg=15
+hi rubyClass                 guifg=#FFFFFF                                  ctermfg=15
+hi rubyConstant              guifg=#DA4939                                  ctermfg=167
+hi rubyInstanceVariable      guifg=#D0D0FF                                  ctermfg=189
+hi rubyInterpolation         guifg=#519F50                                  ctermfg=107
+hi rubyLocalVariableOrMethod guifg=#D0D0FF                                  ctermfg=189
+hi rubyPredefinedConstant    guifg=#DA4939                                  ctermfg=167
+hi rubyPseudoVariable        guifg=#FFC66D                                  ctermfg=221
+hi rubyStringDelimiter       guifg=#A5C261                                  ctermfg=143
 
-hi xmlTag                    guifg=#E8BF6A  ctermfg=179
-hi xmlTagName                guifg=#E8BF6A  ctermfg=179
-hi xmlEndTag                 guifg=#E8BF6A  ctermfg=179
+hi xmlTag                    guifg=#E8BF6A                                  ctermfg=179
+hi xmlTagName                guifg=#E8BF6A                                  ctermfg=179
+hi xmlEndTag                 guifg=#E8BF6A                                  ctermfg=179
 
-hi mailSubject               guifg=#A5C261  ctermfg=107
-hi mailHeaderKey             guifg=#FFC66D  ctermfg=221
-hi mailEmail                 guifg=#A5C261  ctermfg=107 gui=italic cterm=underline
+hi mailSubject               guifg=#A5C261                                  ctermfg=107
+hi mailHeaderKey             guifg=#FFC66D                                  ctermfg=221
+hi mailEmail                 guifg=#A5C261                  gui=italic      ctermfg=107                     cterm=underline
 
 " perl related
-hi perlArrow                 guifg=#d84000  ctermfg=173 cterm=NONE
+hi perlArrow                 guifg=#d84000                                  ctermfg=173                     cterm=NONE
 " regex specials
-"hi perlSpecial              guifg=#ff0000  ctermfg=173 cterm=NONE
+"hi perlSpecial               guifg=#ff0000                                  ctermfg=173                     cterm=NONE
 hi perlVarSimpleMember       guifg=#d84000
 
-hi perlBareword              guifg=#d84000  ctermfg=173 cterm=NONE
-hi perlStringStartEnd        guifg=#ff4800  ctermfg=173 cterm=NONE
+hi perlBareword              guifg=#d84000                                  ctermfg=173                     cterm=NONE
+hi perlStringStartEnd        guifg=#ff4800                                  ctermfg=173                     cterm=NONE
 
-
-hi SpellBad                  guifg=#D70000  ctermfg=160 ctermbg=NONE cterm=underline
-hi SpellRare                 guifg=#D75F87  ctermfg=168 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-hi SpellCap                  guifg=#D0D0FF  ctermfg=189 guibg=NONE ctermbg=NONE gui=underline cterm=underline
-hi MatchParen                guifg=#FFFFFF  ctermfg=15 guibg=#005f5f ctermbg=23
+hi SpellBad                  guifg=#D70000                                  ctermfg=160     ctermbg=NONE    cterm=underline
+hi SpellRare                 guifg=#D75F87  guibg=NONE      gui=underline   ctermfg=168     ctermbg=NONE    cterm=underline
+hi SpellCap                  guifg=#D0D0FF  guibg=NONE      gui=underline   ctermfg=189     ctermbg=NONE    cterm=underline
+hi MatchParen                guifg=#FFFFFF  guibg=#005f5f                   ctermfg=15      ctermbg=23
 
