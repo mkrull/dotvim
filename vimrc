@@ -85,6 +85,7 @@ if has('gui')
 
     if has('gui_macvim')
         set noantialias
+        set transparency=5 " will only work with experimental renderer
         set guifont=Monaco:h14
     else
         set guifont=Terminus\ 12
