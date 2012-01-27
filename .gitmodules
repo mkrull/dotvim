@@ -6,10 +6,6 @@
 	path = vim-pathogen/haskellmode-vim
 	url = git://github.com/lukerandall/haskellmode-vim.git
 
-[submodule "unicode-haskell"]
-	path = vim-pathogen/unicode-haskell
-	url = git://github.com/frerich/unicode-haskell.git
-
 [submodule "nerdtree"]
 	path = vim-pathogen/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git

@@ -84,7 +84,8 @@ if has('gui')
     set go=rm
 
     if has('gui_macvim')
-        set guifont=Monaco:h12
+        set noantialias
+        set guifont=Monaco:h14
     else
         set guifont=Terminus\ 12
     endif
