@@ -90,10 +90,10 @@ if has('gui')
     else
         set guifont=Terminus\ 12
     endif
-    colorscheme makonrails
 endif
 
 if has('gui_running')
+    colorscheme makonrails
     let NERDTreeWinSize=40
     if has('macunix')
         autocmd VimEnter * NERDTree /Users/mak/programming
@@ -101,6 +101,8 @@ if has('gui_running')
         autocmd VimEnter * NERDTree /home/mak/programming
     endif
     autocmd VimEnter * wincmd p
+else
+    colorscheme elflord
 endif
 
 " haskell mode
