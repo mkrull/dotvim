@@ -21,6 +21,14 @@ function! Retab ()
     nohl
 endfunction
 
+function! OpenNerdTree ()
+    if empty($NERD_TREE_ROOT)
+        autocmd VimEnter * NERDTree $HOME
+    else
+        autocmd VimEnter * NERDTree $HOME/$NERD_TREE_ROOT
+    endif
+endfunction
+
 function! Help()
     let helpdoc = input('Call for help on: ')
     call inputrestore()
@@ -96,9 +104,9 @@ if has('gui_running')
     colorscheme makonrails
     let NERDTreeWinSize=40
     if has('macunix')
-        autocmd VimEnter * NERDTree /Users/mak/programming
+        call OpenNerdTree()
     else
-        autocmd VimEnter * NERDTree /home/mak/programming
+        call OpenNerdTree()
     endif
     autocmd VimEnter * wincmd p
 else
