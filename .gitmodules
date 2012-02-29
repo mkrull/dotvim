@@ -61,3 +61,7 @@
 [submodule "mojo.vim"]
 	path = vim-pathogen/mojo.vim
 	url = git://github.com/yko/mojo.vim.git
+
+[submodule "c.vim"]
+	path = vim-pathogen/c.vim
+	url = git://github.com/vim-scripts/c.vim.git
