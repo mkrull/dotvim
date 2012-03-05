@@ -22,11 +22,7 @@ function! Retab ()
 endfunction
 
 function! OpenNerdTree ()
-    if empty($NERD_TREE_ROOT)
-        autocmd VimEnter * NERDTree $HOME
-    else
-        autocmd VimEnter * NERDTree $HOME/$NERD_TREE_ROOT
-    endif
+    exec 'autocmd VimEnter * NERDTree' . fnameescape($HOME . '/' . $NERD_TREE_ROOT)
 endfunction
 
 function! Help()
