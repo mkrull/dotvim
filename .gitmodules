@@ -65,3 +65,12 @@
 [submodule "c.vim"]
 	path = vim-pathogen/c.vim
 	url = git://github.com/vim-scripts/c.vim.git
+
+[submodule "zencoding-vim"]
+	path = vim-pathogen/zencoding-vim
+	url = git://github.com/mattn/zencoding-vim.git
+
+[submodule "vim-surround"]
+	path = vim-pathogen/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+
