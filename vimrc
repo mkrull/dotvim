@@ -49,10 +49,7 @@ set shiftwidth=4
 set list
 set listchars=tab:\!\ ,trail:.
 
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
 syntax on
-colorscheme elflord
 set background=dark
 
 set number
@@ -97,7 +94,9 @@ if has('gui')
 endif
 
 if has('gui_running')
-    colorscheme makonrails
+    let g:solarized_contrast="high"
+    colorscheme solarized
+
     let NERDTreeWinSize=40
     if has('macunix')
         call OpenNerdTree()
@@ -106,7 +105,10 @@ if has('gui_running')
     endif
     autocmd VimEnter * wincmd p
 else
-    colorscheme elflord
+    set t_Co=256
+    let g:solarized_contrast="high"
+    let g:solarized_termcolors=256
+    colorscheme solarized
 endif
 
 " haskell mode
