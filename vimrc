@@ -31,6 +31,12 @@ function! Help()
     exe 'vert bo help ' . helpdoc
 endfunction
 
+function! UsePerl()
+    set tags=/home/mak/.vim/perltags
+    nnoremap <silent> <F6> :%!perltidy<CR>
+endfunction
+
+command! -nargs=0 Retab :call Retab()
 command! -nargs=0 Help :call Help()
 
 if has('mouse')
@@ -125,9 +131,12 @@ set statusline+=%F%m%r%h%w\ [%l,%v][%p%%]\ [%L]
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 
-" perl tags
-autocmd BufNewFile,BufEnter *.pl set tags=/home/mak/.vim/perltags
-autocmd BufNewFile,BufEnter *.pm set tags=/home/mak/.vim/perltags
+" supertab
+let g:SuperTabDefaultCompletionType = 'context'
+
+" perl files use Perl
+autocmd BufNewFile,BufEnter *.pl call UsePerl()
+autocmd BufNewFile,BufEnter *.pm call UsePerl()
 
 " mojo.vim
 let mojo_highlight_data = 1

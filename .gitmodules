@@ -78,3 +78,7 @@
 	path = vim-pathogen/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 
+[submodule "perlomni.vim"]
+	path = vim-pathogen/perlomni.vim
+	url = git://github.com/c9s/perlomni.vim.git
+
