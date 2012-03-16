@@ -40,7 +40,7 @@
 
 [submodule "vim-perl"]
 	path = vim-pathogen/vim-perl
-	url = git://github.com/petdance/vim-perl.git
+	url = git://github.com/mugenken/vim-perl.git
 
 [submodule "vim-conque"]
 	path = vim-pathogen/vim-conque
@@ -81,4 +81,8 @@
 [submodule "perlomni.vim"]
 	path = vim-pathogen/perlomni.vim
 	url = git://github.com/c9s/perlomni.vim.git
+
+[submodule "vim-taglist-plus"]
+	path = vim-pathogen/vim-taglist-plus
+	url = git://github.com/klen/vim-taglist-plus.git
 

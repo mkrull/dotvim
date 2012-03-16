@@ -86,6 +86,7 @@ imap <F2> <C-O><F2>
 set pastetoggle=<F2>
 
 nnoremap <silent> <F5> :call Retab()<CR>
+nnoremap <silent> <F3> :Tlist<CR>
 
 if has('gui')
     set go=rm
@@ -133,6 +134,9 @@ let g:syntastic_auto_loc_list=1
 
 " supertab
 let g:SuperTabDefaultCompletionType = 'context'
+
+" taglist
+let Tlist_Use_Right_Window = 1
 
 " perl files use Perl
 autocmd BufNewFile,BufEnter *.pl call UsePerl()
