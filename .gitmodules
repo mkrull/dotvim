@@ -86,3 +86,7 @@
 	path = vim-pathogen/vim-taglist-plus
 	url = git://github.com/klen/vim-taglist-plus.git
 
+[submodule "vim-vala"]
+	path = vim-pathogen/vim-vala
+	url = git://github.com/rainux/vim-vala.git
+
