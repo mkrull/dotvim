@@ -90,3 +90,7 @@
 	path = vim-pathogen/vim-vala
 	url = git://github.com/rainux/vim-vala.git
 
+[submodule "vim-lua-inspect"]
+	path = vim-pathogen/vim-lua-inspect
+	url = git://github.com/xolox/vim-lua-inspect.git
+

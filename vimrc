@@ -151,3 +151,6 @@ autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
 autocmd BufNewFile,BufEnter *.pl6 set ft=perl6
 autocmd BufNewFile,BufEnter *.pm6 set ft=perl6
 
+" lua
+let g:lua_inspect_warnings = 0
+
