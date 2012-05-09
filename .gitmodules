@@ -94,3 +94,7 @@
 	path = vim-pathogen/vim-lua-inspect
 	url = git://github.com/xolox/vim-lua-inspect.git
 
+[submodule "vim-puppet"]
+	path = vim-pathogen/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
+

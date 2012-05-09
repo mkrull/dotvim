@@ -118,6 +118,9 @@ else
     colorscheme solarized
 endif
 
+" set size on gui enter
+autocmd GUIEnter * set lines=70 columns=170
+
 " haskell mode
 let g:haddock_browser = '/usr/bin/chromium'
 autocmd BufNewFile,BufEnter *.hs compiler ghc
