@@ -1,9 +1,6 @@
-" maksimal vimrc
-
 " load pathogen plugins
 call pathogen#infect('vim-pathogen')
 
-let mapleader = ','
 let g:Perl_MapLeader  = '-'
 
 set nocompatible
@@ -21,14 +18,16 @@ function! Retab ()
     nohl
 endfunction
 
-function! OpenNerdTree ()
-    exec 'autocmd VimEnter * NERDTree' . fnameescape($HOME . '/' . $NERD_TREE_ROOT)
-endfunction
-
 function! Help()
     let helpdoc = input('Call for help on: ')
     call inputrestore()
     exe 'vert bo help ' . helpdoc
+endfunction
+
+function! UseCpp()
+    set tags=/home/mak/.vim/include_tags
+    set ft=cpp
+    nnoremap <silent> <F6> :%!indent<CR>
 endfunction
 
 function! UsePerl()
@@ -89,7 +88,7 @@ nnoremap <silent> <F5> :call Retab()<CR>
 nnoremap <silent> <F3> :Tlist<CR>
 
 if has('gui')
-    set go=rm
+    set go=rme
 
     if has('gui_macvim')
         set noantialias
@@ -106,11 +105,8 @@ if has('gui_running')
 
     let NERDTreeWinSize=40
     if has('macunix')
-        call OpenNerdTree()
     else
-        call OpenNerdTree()
     endif
-    autocmd VimEnter * wincmd p
 else
     set t_Co=256
     let g:solarized_contrast="high"
@@ -119,7 +115,7 @@ else
 endif
 
 " set size on gui enter
-autocmd GUIEnter * set lines=70 columns=170
+autocmd GUIEnter * set lines=60 columns=150
 
 " haskell mode
 let g:haddock_browser = '/usr/bin/chromium'
@@ -134,6 +130,10 @@ set statusline+=%*
 set statusline+=%F%m%r%h%w\ [%l,%v][%p%%]\ [%L]
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
+
+" nerdtree tabs
+let g:nerdtree_tabs_synchronize_view = 0
+
 
 " supertab
 let g:SuperTabDefaultCompletionType = 'context'
