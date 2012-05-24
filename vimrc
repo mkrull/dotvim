@@ -1,6 +1,9 @@
 " load pathogen plugins
 call pathogen#infect('vim-pathogen')
 
+syntax on
+filetype plugin indent on
+
 let g:Perl_MapLeader  = '-'
 
 set nocompatible
@@ -54,7 +57,6 @@ set shiftwidth=4
 set list
 set listchars=tab:\!\ ,trail:.
 
-syntax on
 set background=dark
 
 set number
@@ -75,8 +77,6 @@ set hlsearch       " highlight search (very useful!)
 set incsearch      " search incremently (search while typing)
 set ignorecase     " case insensitive searching
 set smartcase      " but become case sensitive if you type uppercase characters
-
-filetype plugin indent on
 
 " toggle paste-mode
 map <F1> :Help <CR>
@@ -153,6 +153,12 @@ autocmd BufNewFile,BufEnter *.tt set ft=tt2html
 autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
 autocmd BufNewFile,BufEnter *.pl6 set ft=perl6
 autocmd BufNewFile,BufEnter *.pm6 set ft=perl6
+autocmd BufNewFile,BufEnter *.c set ft=cpp
+autocmd BufNewFile,BufEnter *.cc set ft=cpp
+autocmd BufNewFile,BufEnter *.cpp set ft=cpp
+autocmd BufNewFile,BufEnter *.h set ft=cpp
+autocmd BufNewFile,BufEnter *.hh set ft=cpp
+autocmd BufNewFile,BufEnter *.hpp set ft=cpp
 
 " lua
 let g:lua_inspect_warnings = 0
