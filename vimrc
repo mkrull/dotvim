@@ -105,7 +105,9 @@ if has('gui_running')
 
     let NERDTreeWinSize=40
     if has('macunix')
+        exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
     else
+        exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
     endif
 else
     set t_Co=256
@@ -133,6 +135,7 @@ let g:syntastic_auto_loc_list=1
 
 " nerdtree tabs
 let g:nerdtree_tabs_synchronize_view = 0
+let NERDTreeShowBookmarks = 1
 
 
 " supertab
@@ -151,6 +154,8 @@ let mojo_highlight_data = 1
 " buffer dependent syntax highlighting
 autocmd BufNewFile,BufEnter *.tt set ft=tt2html
 autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
+autocmd BufNewFile,BufEnter *.pl set ft=perl
+autocmd BufNewFile,BufEnter *.pm set ft=perl
 autocmd BufNewFile,BufEnter *.pl6 set ft=perl6
 autocmd BufNewFile,BufEnter *.pm6 set ft=perl6
 autocmd BufNewFile,BufEnter *.c set ft=cpp
