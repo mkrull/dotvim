@@ -54,10 +54,6 @@
 	path = vim-pathogen/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 
-[submodule "perlomni.vim"]
-	path = vim-pathogen/perlomni.vim
-	url = git://github.com/c9s/perlomni.vim.git
-
 [submodule "vim-taglist-plus"]
 	path = vim-pathogen/vim-taglist-plus
 	url = git://github.com/klen/vim-taglist-plus.git
@@ -73,4 +69,8 @@
 [submodule "vim-nerdtree-tabs"]
 	path = vim-pathogen/vim-nerdtree-tabs
 	url = git://github.com/jistr/vim-nerdtree-tabs.git
+
+[submodule "vim-ruby"]
+	path = vim-pathogen/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
 
