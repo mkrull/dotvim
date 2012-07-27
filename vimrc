@@ -4,8 +4,6 @@ call pathogen#infect('vim-pathogen')
 syntax on
 filetype plugin indent on
 
-let g:Perl_MapLeader  = '-'
-
 set nocompatible
 set nobackup
 set noerrorbells
@@ -95,7 +93,7 @@ if has('gui')
         set transparency=5 " will only work with experimental renderer
         set guifont=Monaco:h14
     else
-        set guifont=Terminus\ 12
+        set guifont=Dejavu\ Sans\ Mono\ 11
     endif
 endif
 
@@ -167,4 +165,14 @@ autocmd BufNewFile,BufEnter *.hpp set ft=cpp
 
 " lua
 let g:lua_inspect_warnings = 0
+
+" force me to use vim features to navigate
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
