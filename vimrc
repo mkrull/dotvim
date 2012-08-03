@@ -40,7 +40,7 @@ command! -nargs=0 Retab :call Retab()
 command! -nargs=0 Help :call Help()
 
 if has('mouse')
-    set mouse=a
+    set mouse=r
 endif
 
 " tabs and shifts
