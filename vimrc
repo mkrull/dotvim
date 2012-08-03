@@ -43,8 +43,6 @@ if has('mouse')
     set mouse=a
 endif
 
-set columns=120
-
 " tabs and shifts
 set vb
 set expandtab
@@ -64,7 +62,7 @@ set ruler
 set showcmd
 set incsearch
 set history=50
-set scrolloff=10
+"set scrolloff=10
 set wildmenu
 set ruler
 set smartindent         " smart auto indenting
@@ -175,4 +173,7 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
 
