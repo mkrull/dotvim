@@ -39,10 +39,6 @@ endfunction
 command! -nargs=0 Retab :call Retab()
 command! -nargs=0 Help :call Help()
 
-if has('mouse')
-    set mouse=r
-endif
-
 " tabs and shifts
 set vb
 set expandtab
@@ -98,6 +94,10 @@ endif
 if has('gui_running')
     let g:solarized_contrast="high"
     colorscheme solarized
+
+    if has('mouse')
+        set mouse=a
+    endif
 
     let NERDTreeWinSize=40
     if has('macunix')
