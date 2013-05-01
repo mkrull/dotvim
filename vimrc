@@ -87,7 +87,7 @@ if has('gui')
         set transparency=5 " will only work with experimental renderer
         set guifont=Monaco:h14
     else
-        set guifont=Terminus\ 11
+        set guifont=Dejavu\ Sans\ Mono\ 11
     endif
 endif
 
