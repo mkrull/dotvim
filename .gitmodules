@@ -54,10 +54,6 @@
 	path = vim-pathogen/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 
-[submodule "vim-taglist-plus"]
-	path = vim-pathogen/vim-taglist-plus
-	url = git://github.com/klen/vim-taglist-plus.git
-
 [submodule "vim-vala"]
 	path = vim-pathogen/vim-vala
 	url = git://github.com/mkrull/vim-vala.git
