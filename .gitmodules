@@ -14,9 +14,21 @@
 	path = vim-pathogen/perl-vim-mxd
 	url = git://github.com/rkitover/perl-vim-mxd.git
 
+[submodule "tlib_vim"]
+	path = vim-pathogen/tlib_vim
+	url = git://github.com/tomtom/tlib_vim.git
+
+[submodule "vim-addon-mw-utils"]
+	path = vim-pathogen/vim-addon-mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+
 [submodule "snipmate.vim"]
 	path = vim-pathogen/snipmate.vim
-	url = git://github.com/msanders/snipmate.vim.git
+	url = git://github.com/garbas/vim-snipmate.git
+
+[submodule "vim-snippets"]
+	path = vim-pathogen/vim-snippets
+	url = git://github.com/honza/vim-snippets.git
 
 [submodule "supertab"]
 	path = vim-pathogen/supertab

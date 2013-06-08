@@ -1,0 +1,13 @@
+# Method
+snippet osub
+	sub ${1:function_name} {
+		my ($self) = @_;
+		${2:#body ...}
+	}
+
+# alternative Method
+snippet ssub
+	sub ${1:function_name} {
+		my $self = shift;
+		${2:#body ...}
+	}
