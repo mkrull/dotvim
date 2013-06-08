@@ -22,8 +22,8 @@
 	path = vim-pathogen/vim-addon-mw-utils
 	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
 
-[submodule "snipmate.vim"]
-	path = vim-pathogen/snipmate.vim
+[submodule "vim-snipmate"]
+	path = vim-pathogen/vim-snipmate
 	url = git://github.com/garbas/vim-snipmate.git
 
 [submodule "vim-snippets"]
