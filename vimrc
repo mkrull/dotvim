@@ -162,6 +162,11 @@ autocmd BufNewFile,BufEnter *.h set ft=cpp
 autocmd BufNewFile,BufEnter *.hh set ft=cpp
 autocmd BufNewFile,BufEnter *.hpp set ft=cpp
 
+" makefiles
+autocmd BufNewFile,BufEnter Makefile set ft=make
+autocmd BufNewFile,BufEnter makefile set ft=make
+
+
 " lua
 let g:lua_inspect_warnings = 0
 
