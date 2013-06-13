@@ -26,13 +26,12 @@ function! Help()
 endfunction
 
 function! UseCpp()
-    set tags=/home/mak/.vim/include_tags
     set ft=cpp
     nnoremap <silent> <F6> :%!indent<CR>
 endfunction
 
 function! UsePerl()
-    set tags=/home/mak/.vim/perltags
+    set ft=perl
     nnoremap <silent> <F6> :%!perltidy<CR>
 endfunction
 
@@ -77,7 +76,7 @@ imap <F2> <C-O><F2>
 set pastetoggle=<F2>
 
 nnoremap <silent> <F5> :call Retab()<CR>
-nnoremap <silent> <F3> :Tlist<CR>
+nnoremap <silent> <F4> :make<CR>
 
 if has('gui')
     set go=rme
@@ -100,11 +99,8 @@ if has('gui_running')
     endif
 
     let NERDTreeWinSize=40
-    if has('macunix')
-        exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
-    else
-        exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
-    endif
+    exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
+    exec 'autocmd VimEnter * cd '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
 else
     set t_Co=256
     let g:solarized_contrast="high"
@@ -149,18 +145,16 @@ autocmd BufNewFile,BufEnter *.pm call UsePerl()
 let mojo_highlight_data = 1
 
 " buffer dependent syntax highlighting
-autocmd BufNewFile,BufEnter *.tt set ft=tt2html
+autocmd BufNewFile,BufEnter *.tt  set ft=tt2html
 autocmd BufNewFile,BufEnter *.tt2 set ft=tt2html
-autocmd BufNewFile,BufEnter *.pl set ft=perl
-autocmd BufNewFile,BufEnter *.pm set ft=perl
 autocmd BufNewFile,BufEnter *.pl6 set ft=perl6
 autocmd BufNewFile,BufEnter *.pm6 set ft=perl6
-autocmd BufNewFile,BufEnter *.c set ft=cpp
-autocmd BufNewFile,BufEnter *.cc set ft=cpp
-autocmd BufNewFile,BufEnter *.cpp set ft=cpp
-autocmd BufNewFile,BufEnter *.h set ft=cpp
-autocmd BufNewFile,BufEnter *.hh set ft=cpp
-autocmd BufNewFile,BufEnter *.hpp set ft=cpp
+autocmd BufNewFile,BufEnter *.c   call UseCpp()
+autocmd BufNewFile,BufEnter *.cc  call UseCpp()
+autocmd BufNewFile,BufEnter *.cpp call UseCpp()
+autocmd BufNewFile,BufEnter *.h   call UseCpp()
+autocmd BufNewFile,BufEnter *.hh  call UseCpp()
+autocmd BufNewFile,BufEnter *.hpp call UseCpp()
 
 " makefiles
 autocmd BufNewFile,BufEnter Makefile set ft=make
@@ -182,4 +176,14 @@ imap <right> <nop>
 
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
+
+" toggle nerd tree
+noremap <C-N> :NERDTreeToggle<CR>
+
+" faster window navigation
+map <C-H> <C-w>h
+map <C-J> <C-w>j
+map <C-K> <C-w>k
+map <C-L> <C-w>l
+
 

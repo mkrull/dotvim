@@ -90,3 +90,7 @@
 	path = vim-pathogen/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
 
+[submodule "minibufexpl.vim"]
+	path = vim-pathogen/minibufexpl.vim
+	url = git://github.com/fholgado/minibufexpl.vim.git
+
