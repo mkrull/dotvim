@@ -11,28 +11,28 @@ set noflash
 set nowrap
 
 function! Retab ()
-    set expandtab
-    %retab
-    let _s=@/
-    %s/\s\+$//e
-    let @/=_s
-    nohl
+	set expandtab
+	%retab
+	let _s=@/
+	%s/\s\+$//e
+	let @/=_s
+	nohl
 endfunction
 
 function! Help()
-    let helpdoc = input('Call for help on: ')
-    call inputrestore()
-    exe 'vert bo help ' . helpdoc
+	let helpdoc = input('Call for help on: ')
+	call inputrestore()
+	exe 'vert bo help ' . helpdoc
 endfunction
 
 function! UseCpp()
-    set ft=cpp
-    nnoremap <silent> <F6> :%!indent<CR>
+	set ft=cpp
+	nnoremap <silent> <F6> :%!indent<CR>
 endfunction
 
 function! UsePerl()
-    set ft=perl
-    nnoremap <silent> <F6> :%!perltidy<CR>
+	set ft=perl
+	nnoremap <silent> <F6> :%!perltidy<CR>
 endfunction
 
 command! -nargs=0 Retab :call Retab()
@@ -40,13 +40,13 @@ command! -nargs=0 Help :call Help()
 
 " tabs and shifts
 set vb
-set expandtab
+"set expandtab
 set ts=4
 set shiftwidth=4
 
 " hidden chars
 set list
-set listchars=tab:\!\ ,trail:.
+set listchars=tab:\|-,trail:.,eol:¬
 
 set background=dark
 
@@ -79,34 +79,38 @@ nnoremap <silent> <F5> :call Retab()<CR>
 nnoremap <silent> <F4> :make<CR>
 
 if has('gui')
-    set go=rme
+	set go=rme
 
-    if has('gui_macvim')
-        set noantialias
-        set transparency=5 " will only work with experimental renderer
-        set guifont=Monaco:h14
-    else
-        set guifont=Terminus\ 11
-    endif
+	if has('gui_macvim')
+		set noantialias
+		set transparency=5 " will only work with experimental renderer
+		set guifont=Monaco:h14
+	else
+		set guifont=Terminus\ 11
+	endif
 endif
+
+" global solarized settings
+let g:solarized_contrast   = "high"
+let g:solarized_visibility = "low"
+let g:solarized_italic     = 0
+let g:solarized_bold       = 0
+let g:solarized_underline  = 0
 
 if has('gui_running')
-    let g:solarized_contrast="high"
-    colorscheme solarized
+	if has('mouse')
+		set mouse=a
+	endif
 
-    if has('mouse')
-        set mouse=a
-    endif
-
-    let NERDTreeWinSize=40
-    exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
-    exec 'autocmd VimEnter * cd '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
+	let NERDTreeWinSize=40
+	exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
+	exec 'autocmd VimEnter * cd '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
 else
-    set t_Co=256
-    let g:solarized_contrast="high"
-    let g:solarized_termcolors=256
-    colorscheme solarized
+	set t_Co=256
+	let g:solarized_termcolors = 256
 endif
+
+colorscheme solarized
 
 " set size on gui enter
 autocmd GUIEnter * set lines=60 columns=150
