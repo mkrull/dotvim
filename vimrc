@@ -103,7 +103,7 @@ nnoremap <F5> :call Trailfix()<CR>
 nnoremap <F7> :so %<CR>
 
 if has('gui')
-	set go=rme
+	set go=re
 
 	if has('gui_macvim')
 		set noantialias
@@ -116,7 +116,6 @@ endif
 
 " global solarized settings
 let g:solarized_contrast   = "high"
-let g:solarized_visibility = "low"
 let g:solarized_italic     = 0
 let g:solarized_bold       = 0
 let g:solarized_underline  = 0
@@ -126,12 +125,15 @@ if has('gui_running')
 		set mouse=a
 	endif
 
+	let g:solarized_visibility = "low"
+
 	let NERDTreeWinSize=40
 	exec 'autocmd VimEnter * NERDTree '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
 	exec 'autocmd VimEnter * cd '.fnameescape($HOME.'/'.$NERD_TREE_ROOT)
 else
 	set t_Co=256
 	let g:solarized_termcolors = 256
+	let g:solarized_visibility = "normal"
 endif
 
 colorscheme solarized
